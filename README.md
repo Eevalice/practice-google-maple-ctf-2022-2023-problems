@@ -1,4 +1,4 @@
-### Google Capture the Flag Writeup for Sandbox-Lightbox and Web-NoteNinja 2023 Practice Problems
+### Practice Google Capture the Flag Writeup for Sandbox-Lightbox and Web-NoteNinja 2023
 ![image](https://github.com/Eevalice/practice-google-ctf-2023-problems/assets/79138019/547c4364-215a-4cf5-956e-646e21db1ec5)
 
 ## Challenge description
