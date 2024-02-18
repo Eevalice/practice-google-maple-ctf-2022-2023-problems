@@ -3,6 +3,8 @@
 
 ## Challenge description
 
+“Green grass breaks through snow. Artemis pleads for my help. I am so cool.” - Artemis Packet Tracer
+
 In this challenge we can execute an arbitrary payload in a custom seccomp +
 namespace sandbox.
 
