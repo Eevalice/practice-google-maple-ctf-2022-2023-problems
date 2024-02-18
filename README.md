@@ -79,7 +79,7 @@ stage2:
 
 
 
-<img src="./img/maple-ctf.png" width="800"/>
+<img src="./img/maple-ctf-2023.png" width="800"/>
 
 
 ## Challenge description
