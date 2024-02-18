@@ -1,4 +1,4 @@
-### Practice Maple and Google Capture the Flag Writeup (Sandbox and Misc) - <3
+### Practice Maple and Google Capture the Flag Writeup (Sandbox and Crypto) - <3
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mathworks/jupyter-matlab-proxy/run-tests.yml?branch=main&logo=github)](https://www.mathworks.com) [![c++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)
 
