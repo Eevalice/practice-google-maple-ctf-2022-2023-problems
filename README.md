@@ -69,3 +69,20 @@ stage2:
 ![Screenshot 2024-02-18 155810](https://github.com/Eevalice/practice-google-ctf-2023-problems/assets/79138019/41a241f3-9a6e-42a7-980f-283dab822851)
 
 
+## Challenge description
+
+The name of the game is simple. It's love. They say opposites attract. You know like North and South, Hot and Cold, etc. The same is said to be true for parity too, the odd (the ones) and even DWORDS (the zeroes) have always had quite steamy and passionate relationships.
+
+Historically speaking, tradition was paramount for this species. The zeroes scour the world in hopes of find their special One. (Where do you think the saying comes from? duh.) However, we are in the 21st century and must adapt to the new.
+
+So, we made an entire reality TV show about it. The premise is simple: Screw tradition, in this show, only the Ones are allowed to court the zeroes.
+
+Stay tuned for the most drama-filled season of Maple Island as of yet with even more tears, arguments, and passionate moments than ever before. Will every match made in Maple heaven be stable?
+
+Maple Island streaming next month on MapleTV!
+
+But wait, lucky viewers have a chance to catch exclusive early-access content if they can solve the following puzzle below and text the answer to 1-800-MAPLE-1337.
+
+Author: hiswui
+
+nc maple-island.ctf.maplebacon.org 1337
