@@ -2,10 +2,10 @@
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mathworks/jupyter-matlab-proxy/run-tests.yml?branch=main&logo=github)](https://www.mathworks.com) [![c++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)
 
-<img src="./img/maple-ctf.png" width="800"/>
-
 
 ### MapleIslandCTF (Crypto-JWT-JsonWebTokens) - Writeup <3
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mathworks/jupyter-matlab-proxy/run-tests.yml?branch=main&logo=github)](https://www.mathworks.com)[![python](https://img.shields.io/github/release/Envoy-VC/Python-Scripts.svg)](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white) 
+
 
 <img src="./img/maple-ctf-2023.png" width="800"/>
 
@@ -13,7 +13,7 @@
 ### Challenge Description:
 <div style='text-align: justify;'>
 
-“Green grass breaks through snow. Artemis pleads for my help. I am so cool.” - Artemis Packet Tracer
+<b> “Green grass breaks through snow. Artemis pleads for my help. I am so cool.” - Artemis Packet Tracer </b>
 
 The name of the game is simple. It's love. They say opposites attract. You know like North and South, Hot and Cold, etc. The same is said to be true for parity too, the odd (the ones) and even DWORDS (the zeroes) have always had quite steamy and passionate relationships.
 
@@ -140,6 +140,7 @@ Since the JWT implementation recognizes that username as `admin`, the token they
 
 
 ### Google Capture the Flag (Sandbox-Lightbox) - Writeup
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mathworks/jupyter-matlab-proxy/run-tests.yml?branch=main&logo=github)](https://www.mathworks.com)[![python](https://img.shields.io/github/release/Envoy-VC/Python-Scripts.svg)](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white) 
 
 <img src="./img/capture-the-flag.png" width="800"/>
 
