@@ -73,6 +73,14 @@ stage2:
 ![Screenshot 2024-02-18 155810](https://github.com/Eevalice/practice-google-ctf-2023-problems/assets/79138019/41a241f3-9a6e-42a7-980f-283dab822851)
 
 
+\n
+\n
+\n
+
+
+<img src="./img/maple-ctf.png" width="800"/>
+
+
 ## Challenge description
 
 The name of the game is simple. It's love. They say opposites attract. You know like North and South, Hot and Cold, etc. The same is said to be true for parity too, the odd (the ones) and even DWORDS (the zeroes) have always had quite steamy and passionate relationships.
