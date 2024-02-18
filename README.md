@@ -4,7 +4,6 @@
 
 <img src="./img/maple-ctf.png" width="800"/>
 </br>
-</br>
 
 ## Google (Sandbox-Lightbox) - Writeup
 
