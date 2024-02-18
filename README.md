@@ -7,7 +7,6 @@
 
 ### Google (Sandbox-Lightbox) - Writeup
 
-</br>
 
 ### Challenge description
 
