@@ -64,3 +64,8 @@ stage2:
    write(stdout, flag, 128)
    exit(0)
 ```
+![Screenshot 2024-02-18 155810](https://github.com/Eevalice/practice-google-ctf-2023-problems/assets/79138019/41a241f3-9a6e-42a7-980f-283dab822851)
+
+
+
+
