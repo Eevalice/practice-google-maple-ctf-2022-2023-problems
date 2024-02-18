@@ -7,7 +7,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mathworks/jupyter-matlab-proxy/run-tests.yml?branch=main&logo=github)](https://www.mathworks.com)[![python](https://img.shields.io/github/release/Envoy-VC/Python-Scripts.svg)](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white) 
 
 
-<img src="./img/maple-ctf-2023.png" width="800"/>
+<img src="./img/maple-ctf-2022.png" width="800"/>
 
 
 ### Challenge Description:
