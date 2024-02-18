@@ -72,11 +72,6 @@ stage2:
 ```
 ![Screenshot 2024-02-18 155810](https://github.com/Eevalice/practice-google-ctf-2023-problems/assets/79138019/41a241f3-9a6e-42a7-980f-283dab822851)
 
-
-
-
-
-
 </br>
 </br>
 
@@ -85,6 +80,7 @@ stage2:
 
 
 ## Challenge description
+<div style='text-align: justify;'>
 
 The name of the game is simple. It's love. They say opposites attract. You know like North and South, Hot and Cold, etc. The same is said to be true for parity too, the odd (the ones) and even DWORDS (the zeroes) have always had quite steamy and passionate relationships.
 
@@ -101,3 +97,108 @@ But wait, lucky viewers have a chance to catch exclusive early-access content if
 Author: hiswui
 
 nc maple-island.ctf.maplebacon.org 1337
+
+## Intended solution
+
+After seeing the majority of JWT-based CTF challenges rely on vulnerabilities in HS256 and RS256 encryption, I am demonstrating the alternative asymmetric algorithms such as ECC can also be used for signatures and verification.
+</div>
+
+```py
+class ES256:
+    def __init__(self):
+        self.G = secp256k1.G
+        self.order = secp256k1.q
+        self.private = private
+        self.public = self.G * self.private
+
+    def _sign(self, msg):
+        z = sha256(msg.encode()).digest()
+        k = self.private
+
+        z = bl(z)
+
+        r = (k * self.G).x
+        s = inverse(k, self.order) * (z + r * self.private) % self.order
+
+        return r, s
+
+    def _verify(self, r, s, msg):
+        if not (1 <= r < self.order and 1 <= s < self.order):
+            return False
+
+        z = sha256(msg.encode()).digest()
+        z = bl(z)
+
+        u1 = z * inverse(s, self.order) % self.order
+        u2 = r * inverse(s, self.order) % self.order
+
+        p = u1 * self.G + u2 * self.public
+
+        return r == p.x
+
+    # return true if the token signature matches the data
+    def verify(self, data, signature):
+        r = int.from_bytes(signature[:32], "little")
+        s = int.from_bytes(signature[32:], "little")
+
+        return self._verify(r, s, data)
+
+    # return the signed message and update private/public
+    def sign(self, data):
+        ...
+
+    # return the decoded token as a JSON object
+    def decode(self, token):
+        ...
+```
+
+The solution exploits the common mistake of ECDSA nonce reuse. In this case, the nonce is the same as the private key, meaning that an attacker can easily solve the ECDSA equation:
+
+$$s = k^-1(z + rd)$$
+
+$$s = d^-1(z + rd)$$
+
+$$s - r = d^-1z$$
+
+$$d = z/(s - r)$$
+
+
+# login with any username and copy the jwt token
+
+```py
+cookie = 'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWJjZCJ9.75J83TiCMONIDtDLvDQ8FKHa4wx7DNHkauX-Izu11S-wAxbc4z_xrKKBMC3_IS3W0_8JQStEvZw2--CqrKCYig'
+
+print(b64decode(cookie.split('.')[0]), b64decode(cookie.split('.')[1]))
+signature = b64decode(cookie.split('.')[2])
+r = int.from_bytes(signature[:32], "little")
+s = int.from_bytes(signature[32:], "little")
+
+
+G = secp256k1.G
+order = secp256k1.q
+msg = b'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWJjZCJ9'
+z = sha256(msg).digest()
+z = bl(z)
+
+# find the private key
+private = inverse((s - r) * inverse(z, order), order)
+print(private)
+
+
+# forge a new token
+from jwt import ES256
+es = ES256(private)
+print(es.sign({"user":"admin"}))
+```
+Unintended!
+
+As per the <b> RFC for JWT </b>, the data to be signed should be stripped of all spaces. Unfortunately, I only removed these spaces after the user registered, meaning that they could create an account like:
+
+```
+username: ad  mi n
+password: anything
+```
+
+Since the JWT implementation recognizes that username as `admin`, the token they received would be valid for a flag.
+
+
