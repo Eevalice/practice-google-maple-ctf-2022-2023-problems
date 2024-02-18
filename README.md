@@ -45,7 +45,7 @@ Remaining problem is that the stdout will likely already be closed, so we either
 have to pull the read flag into sandboxee process by means of /proc/1/mem or
 just recreate stdout in init process using pidfd_open/pidfd_getfd.
 
-### Solution in pseudocode
+### Solution Exploit in Pseudocode
 
 ```c++
 stage1:
@@ -65,7 +65,5 @@ stage2:
    exit(0)
 ```
 ![Screenshot 2024-02-18 155810](https://github.com/Eevalice/practice-google-ctf-2023-problems/assets/79138019/41a241f3-9a6e-42a7-980f-283dab822851)
-
-
 
 
