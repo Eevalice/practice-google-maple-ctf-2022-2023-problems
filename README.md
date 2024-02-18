@@ -1,4 +1,4 @@
-# Writeup for lightbox
+# Google Writeup for Sandbox-Lightbox and Web-NoteNinja
 
 ## Challenge description
 
