@@ -73,9 +73,10 @@ stage2:
 ![Screenshot 2024-02-18 155810](https://github.com/Eevalice/practice-google-ctf-2023-problems/assets/79138019/41a241f3-9a6e-42a7-980f-283dab822851)
 
 
-\n
-\n
-\n
+
+
+
+
 
 
 <img src="./img/maple-ctf.png" width="800"/>
