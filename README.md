@@ -5,11 +5,11 @@
 <img src="./img/maple-ctf.png" width="800"/>
 </br>
 
-## Google (Sandbox-Lightbox) - Writeup
+### Google (Sandbox-Lightbox) - Writeup
 
 </br>
 
-## Challenge description
+### Challenge description
 
 “Green grass breaks through snow. Artemis pleads for my help. I am so cool.” - Artemis Packet Tracer
 
@@ -20,7 +20,7 @@ The flag is also written to a System V shared memory segment (with the
 key=0xf7a6). Bypassing seccomp restrictions is enough to read the flag, as IPC
 namespace is not used.
 
-## Intended solution
+### Intended solution
 
 Namespaces are set up as the first step of creating the sandbox. Mount namespace
 is almost empty with just a fresh "/proc" instance.
@@ -79,12 +79,12 @@ stage2:
 </br>
 </br>
 
-## MapleIslandCTF (Crypto-JWT-JsonWebTokens) - Writeup
+### MapleIslandCTF (Crypto-JWT-JsonWebTokens) - Writeup
 
 <img src="./img/maple-ctf-2023.png" width="800"/>
 
 
-## Challenge description
+### Challenge description
 <div style='text-align: justify;'>
 
 The name of the game is simple. It's love. They say opposites attract. You know like North and South, Hot and Cold, etc. The same is said to be true for parity too, the odd (the ones) and even DWORDS (the zeroes) have always had quite steamy and passionate relationships.
@@ -103,7 +103,7 @@ Author: hiswui
 
 nc maple-island.ctf.maplebacon.org 1337
 
-## Intended solution
+### Intended solution
 
 After seeing the majority of JWT-based CTF challenges rely on vulnerabilities in HS256 and RS256 encryption, I am demonstrating the alternative asymmetric algorithms such as ECC can also be used for signatures and verification.
 </div>
