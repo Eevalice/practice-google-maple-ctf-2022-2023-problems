@@ -1,4 +1,5 @@
 ### Practice Google and Maple Capture the Flag Writeup (Sandbox and Misc) - <3
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mathworks/jupyter-matlab-proxy/run-tests.yml?branch=main&logo=github)](https://www.mathworks.com) [![codecov](https://codecov.io/gh/mathworks/jupyter-matlab-proxy/branch/main/graph/badge.svg?token=ZW3SESKCSS)](https://www.mathworks.com/help/matlab/scripts.html?s_tid=CRUX_lftnav)
 <img src="./img/maple-ctf.png" width="800"/>
 
 ## Challenge description
