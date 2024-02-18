@@ -1,11 +1,9 @@
 ### Practice Google and Maple Capture the Flag Writeup (Sandbox and Misc) - <3
-<img src="./img/capture-the-flag.png" width="700"/> 
-
+<img src="./img/maple-ctf.png" width="700"/>
 
 ## Challenge description
 
 “Green grass breaks through snow. Artemis pleads for my help. I am so cool.” - Artemis Packet Tracer
-<img src="./img/maple-ctf.png" width="700"/>
 
 In this challenge we can execute an arbitrary payload in a custom seccomp +
 namespace sandbox.
