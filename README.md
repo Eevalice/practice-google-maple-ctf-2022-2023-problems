@@ -1,5 +1,5 @@
 ### Practice Google and Maple Capture the Flag Writeup (Sandbox and Misc) - <3
-<img src="./img/maple-ctf.png" width="700"/>
+<img src="./img/maple-ctf.png" width="800"/>
 
 ## Challenge description
 
