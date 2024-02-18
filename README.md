@@ -47,7 +47,7 @@ just recreate stdout in init process using pidfd_open/pidfd_getfd.
 
 ### Solution in pseudocode
 
-```
+```py
 stage1:
    // launch stage2 in init process before it applies seccomp
    fd = open("/proc/1/mem", O_RDWR)
