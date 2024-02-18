@@ -1,4 +1,4 @@
-### Practice Google and Maple Capture the Flag Writeup for Sandbox-Lightbox and Misc-Maple-Island-<3
+### Practice Google and Maple Capture the Flag Writeup for Sandbox-Lightbox and Misc-Maple-Island - <3
 ![image](https://github.com/Eevalice/practice-google-ctf-2023-problems/assets/79138019/547c4364-215a-4cf5-956e-646e21db1ec5)
 
 ## Challenge description
