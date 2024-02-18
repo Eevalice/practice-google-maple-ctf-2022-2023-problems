@@ -163,7 +163,7 @@ $$s - r = d^-1z$$
 $$d = z/(s - r)$$
 
 
-# login with any username and copy the jwt token
+## login with any username and copy the jwt token
 
 ```py
 cookie = 'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWJjZCJ9.75J83TiCMONIDtDLvDQ8FKHa4wx7DNHkauX-Izu11S-wAxbc4z_xrKKBMC3_IS3W0_8JQStEvZw2--CqrKCYig'
@@ -190,7 +190,8 @@ from jwt import ES256
 es = ES256(private)
 print(es.sign({"user":"admin"}))
 ```
-Unintended!
+
+<b>Unintended!</b>
 
 As per the <b> RFC for JWT </b>, the data to be signed should be stripped of all spaces. Unfortunately, I only removed these spaces after the user registered, meaning that they could create an account like:
 
