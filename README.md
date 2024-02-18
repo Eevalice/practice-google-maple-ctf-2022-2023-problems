@@ -1,6 +1,6 @@
 ### Practice Google and Maple Capture the Flag Writeup for Sandbox-Lightbox and Misc-Maple-Island - <3
-<img src="./img/capture-the-flag.png" width="700"/>
-<img src="./img/maple-ctf.png" width="700"/>
+<img src="./img/capture-the-flag.png" width="500"/> <img src="./img/maple-ctf.png" width="500"/>
+
 
 
 ## Challenge description
